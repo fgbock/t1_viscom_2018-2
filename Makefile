@@ -1,5 +1,5 @@
 warp:
-	gcc -o ./bin/warp ./src/main.c
+	g++ ./src/main.cpp `pkg-config opencv --libs --cflags` -o ./bin/warp
 
 clean: 
 	rm warp
